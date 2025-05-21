@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #4CAF50;
+  padding: 20px;
+  text-align: center;
+}
+#header h1 {
+  color: #fff;
+  margin: 0 0 10px;
+}
+#header nav .boton {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid rgb(25.5, 25.5, 25.5);
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#header nav .boton:hover {
+  background-color: rgb(76.5, 76.5, 76.5);
+}
+
+h2 {
+  color: #4CAF50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  color: #333;
+  text-align: center;
+  margin: 20px;
+}
+
+#container-products {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+#container-products .product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 30%;
+}
+#container-products .product-card img.caja-redonda {
+  width: 100%;
+  border-radius: 10px;
+}
+#container-products .product-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#container-products .product-card button:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+}
+
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+#footer .btn {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#footer .btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  #container-products {
+    flex-direction: column;
+    align-items: center;
+  }
+  #container-products .product-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  #header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header nav .boton {
+    margin: 5px 0;
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  #footer .btn {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
